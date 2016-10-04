@@ -3,7 +3,7 @@ console.log('hola')
 var backGround1 = 'http://www.drodd.com/images14/yellow-wallpaper29.jpg'
 // var xButton = 'https://openclipart.org/image/800px/svg_to_png/227977/Red-X-Icon.png'
 // var roundButton = 'http://www.clipartkid.com/images/340/red-round-circle-with-white-interior-vector-clip-art-iLMYTH-clipart.png'
-
+var tie = 0
 var currentTurn = "X"
 
 var cells = document.getElementsByClassName('cell')
@@ -15,6 +15,7 @@ for (var i = 0; i < cells.length; i++) {
     if (this.innerHTML === "-") {
       // alert("Clicked on ", this)
       this.innerHTML = currentTurn
+      tie = tie + 1
       checkWin()
       switchTurn()
     }else {
@@ -32,6 +33,7 @@ function switchTurn(){
 }
 
 function checkWin(){
+
   if(cells[0].innerHTML !== "-" && cells[0].innerHTML == cells[1].innerHTML && cells[0].innerHTML == cells[2].innerHTML){
     alert (currentTurn + " has won!")
   }
@@ -56,7 +58,17 @@ function checkWin(){
   if(cells[2].innerHTML !== "-" && cells[2].innerHTML == cells[4].innerHTML && cells[2].innerHTML == cells[6].innerHTML){
     alert (currentTurn + " has won!")
   }
+  if (tie === 9) {
+    alert ('Is a TIE!')
+  }
 }
+
+// function checkTie(){
+//     if (true) {
+//
+//     }
+// }
+
 var reset = document.getElementById('reset').addEventListener('click', function(){
   for (var i = 0; i < cells.length; i++) {
     cells[i].innerHTML = '-'
