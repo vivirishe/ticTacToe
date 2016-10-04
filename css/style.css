@@ -1,10 +1,22 @@
+/*Works for a background size of 820 x 438*/
 body{
-  background: rgba(255, 255, 0, 0.3);;
+  background: rgba(255, 255, 0, 0.3);
 }
+
 h1{
   text-align: center;
   color: rgba(255, 0, 50, 0.6);
   font-weight: bolder;
+}
+.xButton{
+  background-image: url(https://openclipart.org/image/800px/svg_to_png/227977/Red-X-Icon.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.oButton{
+  background-image: url(http://www.clipartkid.com/images/340/red-round-circle-with-white-interior-vector-clip-art-iLMYTH-clipart.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 #tttboard{
   margin: auto;
@@ -24,67 +36,83 @@ button{
   object-fit: contain;
   width: 10%;
 }*/
+/* It was the yellow image background to start
 .blanco {
   max-width: 50px;
-  max-height: 50px;
-}
+  max-height: 50px;*/
+
 #pos1{
   position: absolute;
-  top: 100px;
-  left: 280px;
+  top: 80px;
+  left: 260px;
   margin: 22px;
-  object-fit: contain;
-  /*max-width: 100px;
-  max-height: 100px;*/
+  font-size: 4em;
+  color: grey;
 }
 #pos2{
   position: absolute;
   text-align: center;
-  top: 100px;
-  left: 370px;
+  top: 80px;
+  left: 365px;
   margin: 22px;
+  font-size: 4em;
+  color: grey;
 }
 #pos3{
   position: absolute;
-  top: 100px;
+  top: 80px;
   left: 460px;
   margin: 22px;
+  font-size: 4em;
+  color: grey;
 }
 #pos4{
   position: absolute;
-  top: 200px;
-  left: 280px;
+  top: 170px;
+  left: 260px;
   margin: 22px;
+  font-size: 4em;
+  color: grey;
 }
 #pos5{
   position: absolute;
   text-align: center;
-  top: 200px;
-  left: 370px;
+  top: 170px;
+  left: 365px;
   margin: 22px;
+  font-size: 4em;
+  color: grey;
 }
 #pos6{
   position: absolute;
-  top: 200px;
+  top: 170px;
   left: 460px;
   margin: 22px;
+  font-size: 4em;
+  color: grey;
 }
 #pos7{
   position: absolute;
-  top: 300px;
-  left: 280px;
+  top: 265px;
+  left: 260px;
   margin: 22px;
+  font-size: 4em;
+  color: grey;
 }
 #pos8{
   position: absolute;
   text-align: center;
-  top: 300px;
-  left: 370px;
+  top: 265px;
+  left: 365px;
   margin: 22px;
+  font-size: 4em;
+  color: grey;
 }
 #pos9{
   position: absolute;
-  top: 300px;
+  top: 265px;
   left: 460px;
   margin: 22px;
+  font-size: 4em;
+  color: grey;
 }
